@@ -654,9 +654,7 @@ img {
   display: flex;
   flex-direction: column;
 }
-.form__item:not(.form__textarea) {
-  margin-bottom: 10px;
-}
+
 .form__item span {
   margin-bottom: 4px;
 }
@@ -684,7 +682,7 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
-.form__btn {
+.form__item_btn {
   margin-top: 30px;
 }
 .form__link {
@@ -755,6 +753,7 @@ img {
   background-repeat: no-repeat;
 }
 .form__item_btn {
+  margin-bottom: 0;
   display: flex;
   align-items: center;
 }
@@ -790,5 +789,8 @@ img {
   letter-spacing: 0.06em;
 }
 .form__item_chexbox {
-  margin-top: 30px;
+  margin-top: 20px;
+}
+.form__item:not(.form__item_btn, .form__textarea, .form__item_chexbox) {
+  margin-bottom: 10px;
 }
