@@ -373,7 +373,7 @@
             </ul>
           </div>
           <form action="#" class="footer__form">
-            <h3 class="footer__form_headline">Підпишіться на розсилку</h3>
+            <p class="footer__form_headline">Підпишіться на розсилку</p>
             <div class="footer__form_group">
               <input class="footer__form_email" type="email" name="email" placeholder="E-mail" />
               <button type="submit" class="decision_btn footer_form_btn">
@@ -386,10 +386,11 @@
       </div>
     </footer>
     <div class="modal__overlay is-hidden" data-modal>
-      <form action="#" class="modal">
-        <h2 class="form__headline">Залиште свої дані, ми вам передзвонимо</h2>
-        <ul class="form__list">
-          <li class="form__item">
+      <div class="modal">
+        <form action="#" class="m">
+          <p class="form__headline">Залиште свої дані, ми вам передзвонимо</p>
+
+          <div class="form__item">
             <label class="form__label">
               <span>Ім'я</span>
               <input class="form__input form__input_name" type="text" name="name" />
@@ -397,8 +398,8 @@
                 <use href="./images/icons.svg#persone"></use>
               </svg>
             </label>
-          </li>
-          <li class="form__item">
+          </div>
+          <div class="form__item">
             <label class="form__label">
               <span>Телефон</span>
               <input class="form__input" id="telephone" type="tel" name="phone" />
@@ -406,8 +407,8 @@
                 <use href="./images/icons.svg#form-mobile"></use>
               </svg>
             </label>
-          </li>
-          <li class="form__item">
+          </div>
+          <div class="form__item">
             <label class="form__label">
               <span>Пошта</span>
               <input class="form__input" type="email" name="email" />
@@ -415,8 +416,8 @@
                 <use href="./images/icons.svg#form-mail"></use>
               </svg>
             </label>
-          </li>
-          <li class="form__item">
+          </div>
+          <div class="form__item form__textarea">
             <label for="comment" class="form__label">
               <span>Коментар</span>
               <textarea
@@ -426,27 +427,27 @@
                 placeholder="Введіть текст"
               ></textarea>
             </label>
-          </li>
-          <li class="form__item">
+          </div>
+          <div class="form__item form__item_chexbox">
             <label class="form__label form__label_checkbox">
-              <input class="form__checkbox" type="checkbox" name="checkbox"/>
+              <input class="form__checkbox" type="checkbox" name="checkbox" />
               <span class="form__checkbox_check"></span>
-              <span>
+              <span class="form__link_terms">
                 Погоджуюся з розсилкою та приймаю<a href="#" class="form__link"> Умови договору</a>
               </span>
             </label>
-          </li>
-          <li class="form__item form__item_btn">
+          </div>
+          <div class="form__item form__item_btn">
             <button class="decision_btn form__btn" type="submit">Відправити</button>
-          </li>
-        </ul>
+          </div>
 
-        <button type="button" class="modal__close" data-modal-close>
-          <svg width="11" height="11">
-            <use href="./images/icons.svg#close"></use>
-          </svg>
-        </button>
-      </form>
+          <button type="button" class="modal__close" data-modal-close>
+            <svg width="11" height="11">
+              <use href="./images/icons.svg#close"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
     </div>
     <script src="./js/modal.js"></script>
   </body>

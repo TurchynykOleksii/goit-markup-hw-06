@@ -570,8 +570,12 @@ img {
 }
 .footer__adress {
   display: flex;
-  gap: 70px;
+
   align-items: baseline;
+}
+
+.footer__adress_wrapper {
+  margin-right: 70px;
 }
 
 .footer__adress_item a:hover,
@@ -630,7 +634,6 @@ img {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) scale(1);
-
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -651,6 +654,9 @@ img {
   display: flex;
   flex-direction: column;
 }
+.form__item:not(.form__textarea) {
+  margin-bottom: 10px;
+}
 .form__item span {
   margin-bottom: 4px;
 }
@@ -662,8 +668,14 @@ img {
 }
 .form__headline {
   margin-bottom: 12px;
+  font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
+  text-align: center;
+}
+.form__link_terms {
+  font-size: 14px;
+  color: var(--grey-color);
 }
 
 .form__input,
@@ -716,8 +728,8 @@ img {
 .form__label_checkbox {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
-  gap: 7px;
 }
 .form__checkbox {
   appearance: none;
@@ -730,6 +742,7 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form__checkbox_check {
+  margin-right: 8px;
   width: 16px;
   height: 16px;
   border: 2px solid black;
@@ -744,6 +757,9 @@ img {
 .form__item_btn {
   display: flex;
   align-items: center;
+}
+.footer__form {
+  margin-left: auto;
 }
 .footer__form_email {
   margin-right: 15px;
@@ -772,4 +788,7 @@ img {
 
   gap: 10px;
   letter-spacing: 0.06em;
+}
+.form__item_chexbox {
+  margin-top: 30px;
 }
